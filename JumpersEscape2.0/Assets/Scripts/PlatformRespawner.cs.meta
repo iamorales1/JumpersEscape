@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4311923961fe8c346a5d49cf6ab544f6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - DestructablePlat: {fileID: 6979362739997466621, guid: a07a94cdd0ef5744ea20be53784b5442, type: 3}
+  - Spawn: {fileID: 8970655307752581155, guid: a90dfbbe72764c4408d04663b715bca8, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
