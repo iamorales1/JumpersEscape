@@ -23,6 +23,7 @@ public class DestructibleBlock : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        
         if (Destructible.gameObject.tag == "Break")
         {
 
@@ -31,6 +32,7 @@ public class DestructibleBlock : MonoBehaviour
             //Destructible.SetActive(false);
 
         }
+        
 
     }
 
