@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6854543523268287914}
   - component: {fileID: 5883429403246201099}
   - component: {fileID: 518742053091859815}
+  - component: {fileID: 1263937293151923320}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -95,3 +96,31 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1263937293151923320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979362739997466621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38cae931439264df4899fdd10b002d96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdownTime: 0
+  Jumper: {fileID: 0}
+  controller: {fileID: 0}
+  cam: {fileID: 0}
+  speed: 6
+  turnSmoothTime: 0.1
+  lives: 3
+  fallDepth: 0
+  isGrounded: 0
+  winText: {fileID: 0}
+  countText: {fileID: 0}
+  livesText: {fileID: 0}
+  gameOverText: {fileID: 0}
+  _speed: 0
+  _gravity: 1
+  _jumpHeight: 0
