@@ -8,6 +8,7 @@ public class CharControllerTest : MonoBehaviour
     public static CharControllerTest instance;
     public int countdownTime;
     public GameObject Jumper = null;
+    Transform coinEffect;
 
     //for camera
     public CharacterController controller;
@@ -192,6 +193,7 @@ public class CharControllerTest : MonoBehaviour
         if (other.gameObject.CompareTag("Coin"))
         {
             other.gameObject.SetActive(false);
+            //Instantiate(coinEffect, transform.position, transform.rotation);
             count = count + 1;
             SetCountText();
         }
