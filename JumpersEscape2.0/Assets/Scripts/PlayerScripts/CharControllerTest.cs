@@ -9,8 +9,10 @@ public class CharControllerTest : MonoBehaviour
     public int countdownTime;
     public GameObject Jumper = null;
     // Transform coinEffect;
-   // [SerializeField]
-   // private GameObject ParticlePrefab;
+    // [SerializeField]
+    // private GameObject ParticlePrefab;
+    public GameOver GameOver;
+    int maxTokens = 0;
 
     //for camera
     public CharacterController controller;
@@ -222,4 +224,12 @@ public class CharControllerTest : MonoBehaviour
 
 
     }
+
+    public void GameOverScreen()
+    {
+        GameOver.Setup(maxTokens);
+    }
+
+   
+
 }
