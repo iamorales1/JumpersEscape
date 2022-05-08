@@ -8,7 +8,9 @@ public class CharControllerTest : MonoBehaviour
     public static CharControllerTest instance;
     public int countdownTime;
     public GameObject Jumper = null;
-    Transform coinEffect;
+    // Transform coinEffect;
+   // [SerializeField]
+   // private GameObject ParticlePrefab;
 
     //for camera
     public CharacterController controller;
@@ -193,7 +195,7 @@ public class CharControllerTest : MonoBehaviour
         if (other.gameObject.CompareTag("Coin"))
         {
             other.gameObject.SetActive(false);
-            //Instantiate(coinEffect, transform.position, transform.rotation);
+          //  Instantiate(ParticlePrefab, gameObject.transform.position, Quaternion.identity);
             count = count + 1;
             SetCountText();
         }
