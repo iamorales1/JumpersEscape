@@ -86,7 +86,7 @@ public class CharControllerTest : MonoBehaviour
     void Update()
     {
 
-        StartCoroutine(CountdownToStart());
+       // StartCoroutine(CountdownToStart());
 
         if (!_charController.enabled)
             return;
@@ -183,7 +183,8 @@ public class CharControllerTest : MonoBehaviour
         livesText.text = "Lives: " + lives.ToString();
         if (lives <= 0)
         {
-            gameOverText.text = "Game Over!";
+            //gameOverText.text = "Game Over!";
+            GameOverScreen();
         }
     }
 
@@ -200,6 +201,10 @@ public class CharControllerTest : MonoBehaviour
           //  Instantiate(ParticlePrefab, gameObject.transform.position, Quaternion.identity);
             count = count + 1;
             SetCountText();
+        }
+        if (other.tag == "Win")
+        {
+           winText.text = "You Win!";
         }
     }
 
