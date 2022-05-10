@@ -148,7 +148,10 @@ public class CharControllerTest : MonoBehaviour
 
         if (transform.position.y < fallDepth)
         {
+            
             Respawn();
+            lives--;
+
         }
 
     }
@@ -169,13 +172,15 @@ public class CharControllerTest : MonoBehaviour
 
     public void Respawn()
     {
+        Debug.Log("Dead");
         transform.position = startPos;
-        lives--;
+        //lives--;
         SetCountText();
         if (lives <= 0)
         {
             this.enabled = false;
         }
+
 
 
     }
