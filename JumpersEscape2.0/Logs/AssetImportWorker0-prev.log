@@ -1,181 +1,125 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.16f1 (049d6eca3c44) revision 302446'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 22000.613; Version 2009; 64bit' Language: 'en' Physical Memory: 65410 MB
+OS: 'Windows 10 Home; OS build 22000.613; Version 2009; 64bit' Language: 'en' Physical Memory: 11976 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-E:\unityHub\2020.3.16f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.16f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-E:/school/Spring 2022/370 GameDev/GitEscape/JumpersEscape/JumpersEscape2.0
+C:/Users/bryce/Documents/GitHub/JumpersEscape/JumpersEscape2.0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56779
-Successfully changed project path to: E:/school/Spring 2022/370 GameDev/GitEscape/JumpersEscape/JumpersEscape2.0
-E:/school/Spring 2022/370 GameDev/GitEscape/JumpersEscape/JumpersEscape2.0
+62177
+Successfully changed project path to: C:/Users/bryce/Documents/GitHub/JumpersEscape/JumpersEscape2.0
+C:/Users/bryce/Documents/GitHub/JumpersEscape/JumpersEscape2.0
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 44.75 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 70.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.16f1 (049d6eca3c44)
-[Subsystems] Discovering subsystems at path E:/unityHub/2020.3.16f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/school/Spring 2022/370 GameDev/GitEscape/JumpersEscape/JumpersEscape2.0/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/bryce/Documents/GitHub/JumpersEscape/JumpersEscape2.0/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2191)
+    Renderer: Intel(R) UHD Graphics (ID=0x8a56)
     Vendor:   
-    VRAM:     5991 MB
-    Driver:   30.0.15.1179
+    VRAM:     5988 MB
+    Driver:   27.20.100.8853
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
-Mono path[0] = 'E:/unityHub/2020.3.16f1/Editor/Data/Managed'
-Mono path[1] = 'E:/unityHub/2020.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'E:/unityHub/2020.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56564
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: E:/unityHub/2020.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001048 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001709 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.26 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 58.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.176 seconds
+- Completed reload, in  1.371 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1176ms)
-		BeginReloadAssembly (71ms)
+	ReloadAssembly (1371ms)
+		BeginReloadAssembly (59ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (407ms)
-			LoadAssemblies (71ms)
+		EndReloadAssembly (510ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (146ms)
+			SetupTypeCache (177ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (164ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (214ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (45ms)
-				BeforeProcessingInitializeOnLoad (15ms)
-				ProcessInitializeOnLoadAttributes (74ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
+				RefreshPlugins (59ms)
+				BeforeProcessingInitializeOnLoad (21ms)
+				ProcessInitializeOnLoadAttributes (92ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003827 seconds.
+Registered in 0.006205 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-00000209ABFE1870 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Assembly-CSharp.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209AD5AA2B0 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000020987B4C010 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209880A2030 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000020987DF72C0 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209877BF020 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209AD1AC020 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209ACBF89C0 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209ABE89020 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209AC0EF660 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000020987DF86C0 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209ABCF0080 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209ACBF89C0 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000020987DF72C0 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209ABE02010 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209AC0EF660 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002098767E0D0 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209879977A0 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002098763A010 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002098763A010 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209AD60F030 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209AD88F010 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209ABD6C040 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002098764EA20 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209ABE2D700 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000020987A99B60 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000020987A99B60 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000209AC7D3020 doesn't match image E:\school\Spring 2022\370 GameDev\GitEscape\JumpersEscape\JumpersEscape2.0\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 42.49 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 63.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.312 seconds
+- Completed reload, in  2.174 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1313ms)
-		BeginReloadAssembly (144ms)
+	ReloadAssembly (2177ms)
+		BeginReloadAssembly (227ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (1115ms)
-			LoadAssemblies (96ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1874ms)
+			LoadAssemblies (108ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (302ms)
+			SetupTypeCache (373ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (563ms)
+			RebuildScriptCaches (98ms)
+			SetupLoadedEditorAssemblies (1127ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (43ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (436ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
+				RefreshPlugins (64ms)
+				BeforeProcessingInitializeOnLoad (133ms)
+				ProcessInitializeOnLoadAttributes (905ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2718 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 194.1 MB.
-System memory in use after: 194.3 MB.
+System memory in use before: 193.3 MB.
+System memory in use after: 193.5 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3154.
-Total: 3.542400 ms (FindLiveObjects: 0.241600 ms CreateObjectMapping: 0.116400 ms MarkObjects: 3.122900 ms  DeleteObjects: 0.060800 ms)
+Total: 6.643200 ms (FindLiveObjects: 0.557800 ms CreateObjectMapping: 0.226300 ms MarkObjects: 5.545100 ms  DeleteObjects: 0.312400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -184,7 +128,6 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
@@ -192,15 +135,7 @@ AssetImportParameters requested are different than current active one (requested
 Received Import Request.
   path: Assets/Materials/FinalPlatArea.mat
   artifactKey: Guid(e6a1351f694f02642bc9c38717052a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/FinalPlatArea.mat using Guid(e6a1351f694f02642bc9c38717052a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6092272761b3fb68f47e269ce75b0f4e') in 0.223575 seconds 
-  Import took 0.227431 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.889291 seconds.
-  path: Assets/Materials/FinalPlatArea.mat
-  artifactKey: Guid(e6a1351f694f02642bc9c38717052a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/FinalPlatArea.mat using Guid(e6a1351f694f02642bc9c38717052a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8ea789c7b485ee7e2f5462e9b3b083') in 0.035876 seconds 
-  Import took 0.039776 seconds .
+Start importing Assets/Materials/FinalPlatArea.mat using Guid(e6a1351f694f02642bc9c38717052a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85107453fd9e82fd5cb8a0d35454d77f') in 0.410423 seconds 
+  Import took 0.417143 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
