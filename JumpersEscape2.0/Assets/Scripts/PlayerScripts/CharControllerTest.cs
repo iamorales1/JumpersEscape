@@ -88,8 +88,16 @@ public class CharControllerTest : MonoBehaviour
 
        // StartCoroutine(CountdownToStart());
 
-        if (!_charController.enabled)
+        if (countdownTime > 0)
+        {
             return;
+        }
+
+        Debug.Log("Player Move");
+
+
+       // if (!_charController.enabled)
+           // return;
 
         float horInput = Input.GetAxis("Horizontal");
         float vertInput = Input.GetAxis("Vertical");
@@ -174,7 +182,7 @@ public class CharControllerTest : MonoBehaviour
 
     void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
+        countText.text = "Tokens: " + maxTokens.ToString();
         //   if (count >= 11)
         //   {
         //       winText.text = "You Win!";
@@ -198,8 +206,8 @@ public class CharControllerTest : MonoBehaviour
         if (other.gameObject.CompareTag("Coin"))
         {
             other.gameObject.SetActive(false);
-          //  Instantiate(ParticlePrefab, gameObject.transform.position, Quaternion.identity);
-            count = count + 1;
+            //  Instantiate(ParticlePrefab, gameObject.transform.position, Quaternion.identity);
+            maxTokens++;
             SetCountText();
         }
         if (other.tag == "Win")
@@ -221,7 +229,7 @@ public class CharControllerTest : MonoBehaviour
         {
             // countdownDisplay.text = countdownTime.ToString();
 
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(1f);
 
             Jumper.SetActive(true);
             countdownTime--;
