@@ -108,5 +108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b734916f1d64f85409bf69bba2a0e677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpeedParticleVariant: {fileID: 2592740720059651224, guid: 07f6eb2fa6e80b84f913f63571bb8651, type: 3}
   SpeedingToken: {fileID: 1819872486791747472}
-  CharControllerTestScript: {fileID: 0}
+  CharControllerTestScript: {fileID: 6728674025073104875, guid: 432f678769210450ebc0ec1e892dfbac, type: 3}

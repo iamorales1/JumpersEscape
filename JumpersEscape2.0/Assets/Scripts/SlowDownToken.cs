@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SlowDownToken : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject SlowParticleVariant;
+
     public GameObject SpeedDownToken;
     //public EnemyMove EnemyMoveScript;
     public CharControllerTest CharControllerTestScript;
@@ -16,6 +19,7 @@ public class SlowDownToken : MonoBehaviour
             Debug.Log("SpeedDown token picked up !!Moorv Moorv");
             CharControllerTestScript.speed -= 1f;
             Debug.Log("Speed:" + CharControllerTestScript.speed);
+            Instantiate(SlowParticleVariant, gameObject.transform.position, Quaternion.identity);
         }
     }
 
