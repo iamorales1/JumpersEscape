@@ -13,6 +13,7 @@ public class CharControllerTest : MonoBehaviour
     // private GameObject ParticlePrefab;
     public GameOver GameOver;
     int maxTokens = 0;
+    public winScreen Win;
 
     //for camera
     public CharacterController controller;
@@ -76,11 +77,11 @@ public class CharControllerTest : MonoBehaviour
         // BeginGame();
     }
 
-    public void BeginGame()
-    {
-        gameplaying = true;
+   // public void BeginGame()
+   // {
+      //  gameplaying = true;
         //startTime = Time.time;
-    }
+   // }
 
 
     void Update()
@@ -217,7 +218,9 @@ public class CharControllerTest : MonoBehaviour
         }
         if (other.tag == "Win")
         {
-           winText.text = "You Win!";
+            Debug.Log("Hit");
+             //winText.text = "You Win!";
+            WinScreen();
         }
     }
 
@@ -248,6 +251,11 @@ public class CharControllerTest : MonoBehaviour
         GameOver.Setup(maxTokens);
     }
 
-   
+
+    public void WinScreen()
+    {
+        Win.Setup(maxTokens);
+    }
+
 
 }
