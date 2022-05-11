@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 458927309189688186}
   - component: {fileID: 458927309189688185}
   - component: {fileID: 458927309189688184}
+  - component: {fileID: 814756881648949677}
   m_Layer: 0
   m_Name: Scaffold
   m_TagString: Break
@@ -95,7 +96,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2699660337440932153, guid: 52b15e5ab1372e54a971cf3fc759b90f, type: 3}
 --- !u!65 &458927309189688185
@@ -124,3 +125,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Destructible: {fileID: 765337218767940440}
+--- !u!54 &814756881648949677
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765337218767940440}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
