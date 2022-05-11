@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class SlowDownToken : MonoBehaviour
 {
-    public GameObject SpeedDown;
-    public EnemyMove EnemyMoveScript;
+    public GameObject SpeedDownToken;
+    //public EnemyMove EnemyMoveScript;
+    public CharControllerTest CharControllerTestScript;
 
     public void OnTriggerEnter(Collider other)
     {
-        if (SpeedDown.gameObject.tag == "Slow")
-        { 
-            Destroy(SpeedDown.gameObject);
-
-            EnemyMoveScript.EnemyDistanceChase -= 1;
-            Debug.Log("EnemySpeed: " + EnemyMoveScript.EnemyDistanceChase);
+        if (SpeedDownToken.gameObject.tag == "Slow")
+        {
+            Destroy(SpeedDownToken.gameObject);
+            Debug.Log("SpeedDown token picked up !!Moorv Moorv");
+            CharControllerTestScript.speed -= 1f;
+            Debug.Log("Speed:" + CharControllerTestScript.speed);
         }
     }
 
