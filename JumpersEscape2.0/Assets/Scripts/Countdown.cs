@@ -25,7 +25,7 @@ public class Countdown : MonoBehaviour
 
         countdownDisplay.text = "GO!";
 
-        CharControllerTest.instance.BeginGame();
+     //   CharControllerTest.instance.BeginGame();
 
         yield return new WaitForSeconds(1f);
 
