@@ -6,7 +6,7 @@ public class SpeedTokensScript : MonoBehaviour
 {
     public GameObject SpeedUpToken;
     public GameObject SpeedDownToken;
-
+    public CharControllerTest CharControllerTestScript;
 
     // Start is called before the first frame update
     void Start()
@@ -26,14 +26,14 @@ public class SpeedTokensScript : MonoBehaviour
         {
             Destroy(SpeedUpToken.gameObject);
             Debug.Log("Speedup token picked up Vroom Vroom!!");
-           
+            CharControllerTestScript.speed += 1f;
         }
 
         if (SpeedDownToken.gameObject.tag == "Slow") //Andale means Go
         {
             Destroy(SpeedDownToken.gameObject);
             Debug.Log("SpeedDown token picked up !!Moorv Moorv");
-
+            CharControllerTestScript.speed -= 1f;
         }
     }
 

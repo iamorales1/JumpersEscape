@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 //Enrique Chavez            4/12/22
 //Speed token script makes player speed up by 1 for each pick up that is touched.
+//Particle Code provided by Bryce
 public class SpeedUpToken : MonoBehaviour
-{
+{ 
+    [SerializeField]
+    private GameObject SpeedParticleVariant;
     public GameObject SpeedingToken;
     // public JumperMove JumpMovescript; //lets me call JumperMove script variables  
     public CharControllerTest CharControllerTestScript;
@@ -24,7 +27,7 @@ public class SpeedUpToken : MonoBehaviour
             Debug.Log("Speedup token picked up Vroom Vroom!!");
             CharControllerTestScript.speed += 1f;
             Debug.Log("Speed:" + CharControllerTestScript.speed);
-
+            Instantiate(SpeedParticleVariant, gameObject.transform.position, Quaternion.identity);
         }
         
       
