@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Break
+  - Wall
+  - Enemy
+  - Win
+  - Coin
+  - Checkpoint
+  - Jumper
+  - Andale
+  - Slow
   layers:
   - Default
   - TransparentFX

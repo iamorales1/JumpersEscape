@@ -5,24 +5,28 @@ using UnityEngine;
 //Speed token script makes player speed up by 1 for each pick up that is touched.
 public class SpeedUpToken : MonoBehaviour
 {
-    public GameObject SpeedUp;
-    public JumperMove JumpMovescript; //lets me call JumperMove script variables  
-    
+    public GameObject SpeedingToken;
+    // public JumperMove JumpMovescript; //lets me call JumperMove script variables  
+    public CharControllerTest CharControllerTestScript;
+
+
     // Update is called once per frame
     void Update()
-    { 
-        //check for speed change  
-        Debug.Log("Speed: "+JumpMovescript.speed);
+    {
+       
     }
     public void OnTriggerEnter(Collider other)
     {
-        if (SpeedUp.gameObject.tag == "Andale") //Andale means Go
+        if (SpeedingToken.gameObject.tag == "Andale") //Andale means Go
         {
-            //gets rid of the token 
-            Destroy(SpeedUp.gameObject);
-            Debug.Log("Speedup token picked up");
-            //need to make the player speed up now
-            JumpMovescript.speed++;
+            
+            Destroy(SpeedingToken.gameObject);
+            Debug.Log("Speedup token picked up Vroom Vroom!!");
+            CharControllerTestScript.speed += 1f;
+            Debug.Log("Speed:" + CharControllerTestScript.speed);
+
         }
+        
+      
     }
 }
