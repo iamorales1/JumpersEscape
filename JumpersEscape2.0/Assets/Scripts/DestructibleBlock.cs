@@ -23,13 +23,13 @@ public class DestructibleBlock : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("PlayerHit!");
+       
         
-        if (Destructible.gameObject.tag == "Break")
+        if (other.gameObject.tag == "Jumper" )
         {
 
             Destroy(Destructible.gameObject, 3.0f);
-
+            Debug.Log("PlayerHit!");
             //Destructible.SetActive(false);
 
         }
