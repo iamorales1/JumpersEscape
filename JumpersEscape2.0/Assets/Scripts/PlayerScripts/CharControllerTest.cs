@@ -93,13 +93,7 @@ public class CharControllerTest : MonoBehaviour
         {
             return;
         }
-
-        Debug.Log("Player Move");
-
-
-       // if (!_charController.enabled)
-           // return;
-
+       
         float horInput = Input.GetAxis("Horizontal");
         float vertInput = Input.GetAxis("Vertical");
 
@@ -109,11 +103,7 @@ public class CharControllerTest : MonoBehaviour
 
         if (_charController.isGrounded)
         {
-            Debug.Log("Ground");
-            // Vector3 dir = new Vector3(horInput, 0, vertInput);
-            // velocity = dir * _speed;
             canWallJump = false;
-
             if (Input.GetKeyDown(KeyCode.Space))
             {
 
@@ -144,9 +134,6 @@ public class CharControllerTest : MonoBehaviour
         velocity.y = _gravImpulse;
         _charController.Move(velocity * Time.deltaTime);
 
-        
-
-
         if (transform.position.y < fallDepth)
         {
             
@@ -157,8 +144,6 @@ public class CharControllerTest : MonoBehaviour
 
     }
 
-
-
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         if (!_charController.isGrounded && hit.collider.CompareTag("Wall"))
@@ -168,8 +153,6 @@ public class CharControllerTest : MonoBehaviour
             Debug.Log("Wall jump triggered");
         }
     }
-
-
 
     public void Respawn()
     {
@@ -208,6 +191,7 @@ public class CharControllerTest : MonoBehaviour
         if (other.tag == "Enemy")
         {
             Respawn();
+            lives--;
         }
         if (other.gameObject.CompareTag("Coin"))
         {
