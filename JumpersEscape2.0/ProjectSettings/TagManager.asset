@@ -13,6 +13,16 @@ TagManager:
   - Jumper
   - Andale
   - Slow
+  - EnemyReset1
+  - Enemy1
+  - EnemyReset2
+  - Enemy2
+  - Enemy3
+  - EnemyReset3
+  - Enemy4
+  - EnemyReset4
+  - Enemy5
+  - EnemyReset5
   layers:
   - Default
   - TransparentFX
