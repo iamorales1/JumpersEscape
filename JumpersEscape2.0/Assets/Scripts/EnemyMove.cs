@@ -57,7 +57,8 @@ public class EnemyMove : MonoBehaviour
             return;
         }
 
-
+       
+    
         float distance = Vector3.Distance(transform.position, Jumper.transform.position);
 
         //Run towards player
