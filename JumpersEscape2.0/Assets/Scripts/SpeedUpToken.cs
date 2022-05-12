@@ -25,8 +25,8 @@ public class SpeedUpToken : MonoBehaviour
             
             Destroy(SpeedingToken.gameObject);
             Debug.Log("Speedup token picked up Vroom Vroom!!");
-            CharControllerTestScript._speed += 1f;
-            Debug.Log("Speed:" + CharControllerTestScript.speed);
+            CharControllerTestScript._speed += 2f;
+            Debug.Log("Speed:" + CharControllerTestScript._speed);
             Instantiate(SpeedParticleVariant, gameObject.transform.position, Quaternion.identity);
         }
         
