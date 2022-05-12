@@ -17,7 +17,7 @@ public class SlowDownToken : MonoBehaviour
         {
             Destroy(SpeedDownToken.gameObject);
             Debug.Log("SpeedDown token picked up !!Moorv Moorv");
-            CharControllerTestScript.speed -= 1f;
+            CharControllerTestScript._speed -= 1f;
             Debug.Log("Speed:" + CharControllerTestScript.speed);
             Instantiate(SlowParticleVariant, gameObject.transform.position, Quaternion.identity);
         }

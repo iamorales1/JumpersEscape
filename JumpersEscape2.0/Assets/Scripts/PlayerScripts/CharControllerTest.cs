@@ -15,13 +15,14 @@ public class CharControllerTest : MonoBehaviour
     int maxTokens = 0;
     public winScreen Win;
 
+    
     //for camera
     public CharacterController controller;
     public Transform cam;
     public float speed = 6f;
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
-
+    
     /*
     //for gravity
     public float gravity = -9.8f;
@@ -45,8 +46,8 @@ public class CharControllerTest : MonoBehaviour
 
 
     //////
-    [SerializeField]
-    private float _speed;
+    //[SerializeField]
+    public float _speed;
     [SerializeField]
     private float _gravity = 1f;
     [SerializeField]
@@ -185,13 +186,63 @@ public class CharControllerTest : MonoBehaviour
         }
     }
 
+    //Death Blink
+    public IEnumerator Blink()
+    {
+        for (int index = 0; index < 20; index++)
+        {
+            if (index % 2 == 0)
+            {
+                GetComponent<MeshRenderer>().enabled = false;
+            }
+            else
+            {
+                GetComponent<MeshRenderer>().enabled = true;
+            }
+            yield return new WaitForSeconds(.1f);
+        }
+        GetComponent<MeshRenderer>().enabled = true;
+    }
+
+
+
     public void OnTriggerEnter(Collider other)
     {
         //kills and respawner the player if colldied with the below
-        if (other.tag == "Enemy")
+        if (other.tag == "Enemy1")
         {
             Respawn();
             lives--;
+            StartCoroutine(Blink());
+            Debug.Log("Blink");
+        }
+        if (other.tag == "Enemy2")
+        {
+            Respawn();
+            lives--;
+            StartCoroutine(Blink());
+            Debug.Log("Blink");
+        }
+        if (other.tag == "Enemy3")
+        {
+            Respawn();
+            lives--;
+            StartCoroutine(Blink());
+            Debug.Log("Blink");
+        }
+        if (other.tag == "Enemy4")
+        {
+            Respawn();
+            lives--;
+            StartCoroutine(Blink());
+            Debug.Log("Blink");
+        }
+        if (other.tag == "Enemy5")
+        {
+            Respawn();
+            lives--;
+            StartCoroutine(Blink());
+            Debug.Log("Blink");
         }
         if (other.gameObject.CompareTag("Coin"))
         {
@@ -235,11 +286,8 @@ public class CharControllerTest : MonoBehaviour
         GameOver.Setup(maxTokens);
     }
 
-
     public void WinScreen()
     {
         Win.Setup(maxTokens);
     }
-
-
 }

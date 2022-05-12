@@ -129,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Jumper: {fileID: 0}
   EnemyDistanceChase: 10
+  countdownTime: 0
 --- !u!195 &2979041137634422120
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -163,5 +164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b52f80895381b4b1ba5cf8f1363d0805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Jumper: {fileID: 0}
-  EnemyDistanceChase: 5
+  Jumper: {fileID: 6728674025073104870, guid: 432f678769210450ebc0ec1e892dfbac, type: 3}
+  EnemyDistanceChase: 8
+  countdownTime: 4
